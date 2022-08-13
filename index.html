@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
 </head>
 <body>
@@ -20,7 +22,7 @@
     <!--Nav-->
     <nav>
         <div class="container">
-            <a href="#"><h3>Front-end</h3></a>
+            <a href="#"><h3>SendAngel</h3></a>
             <ul>
                 <li>
                     <a class="active" href="#">Home</a>
@@ -41,8 +43,8 @@
                     <a href="#contact">Let's Talk</a>
                 </li>
             </ul>
-            <button><span class="material-symbols-sharp">menu</span></button>
-            <button><span class="material-symbols-sharp">close</span></button>
+            <button id="menu-btn"><span class="material-symbols-sharp">menu</span></button>
+            <button id="close-btn"><span class="material-symbols-sharp">close</span></button>
         </div>
     </nav>
 
@@ -305,6 +307,260 @@
 
         </div>
     </section>
+
+
+    <!--Services-->
+    <section class="services" id="services">
+        <h1>Services</h1>
+        <div class="container">
+            <div class="service">
+                <span class="material-symbols-sharp">design_services</span>
+                <h3>UI/UX Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur animi voluptates dolore, distinctio molestiae autem quidem sed delectus voluptatum quas, ex recusandae, error repellendus iste iure odio ullam at assumenda.</p>
+            </div>
+            <div class="service">
+                <span class="material-symbols-sharp">language</span>
+                <h3>Websites & Web apps Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur animi voluptates dolore, distinctio molestiae autem quidem sed delectus voluptatum quas, ex recusandae, error repellendus iste iure odio ullam at assumenda.</p>
+            </div>
+            <div class="service">
+                <span class="material-symbols-sharp">devices</span>
+                <h3>Mobile Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur animi voluptates dolore, distinctio molestiae autem quidem sed delectus voluptatum quas, ex recusandae, error repellendus iste iure odio ullam at assumenda.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Portfolio-->
+
+    <section class="recent-work" id="portfolio">
+        <div class="container">
+            <h4>My Recent Work</h4>
+            <h1>Here are Some Of My Most Resent Solo Projects</h1>
+            <div class="projects">
+
+                <div class="project">
+                    <div class="thubmnail">
+                        <img src="img/work-1.jpg" width="1000" height="500">
+                    </div>
+                    <h2>Complete responsive website of the Transport company
+                        "translogistics"</h2>
+                    <p>Responsive layout for all screens. The site consists of four pages: main and three text pages. The entire site has a fixed header. Added animation, smooth scrolling to sections and favicon.</p>
+                    <div class="action">
+                        <a href="https://github.com/Sendangel/TransLogistic" target="blank">Github</a>
+                        <a href="https://sendangel.github.io/TransLogistic/" target="blank">Live Demo</a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="thubmnail">
+                        <img src="img/work-2.jpg" width="1000" height="500">
+                    </div>
+                    <h2>coming soon</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum illum itaque quidem culpa molestiae, et harum, sit error natus doloremque repellendus, accusantium veniam voluptatibus esse voluptate deserunt quod modi labore?</p>
+                    <div class="action">
+                        <a href="https://github.com/Sendangel/Portfolio-Test" target="blank">Github</a>
+                        <a href="https://sendangel.github.io/Portfolio-Test/" target="blank">Live Demo</a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="thubmnail">
+                        <img src="img/coming-soon.jpg" width="1000" height="500">
+                    </div>
+                    <h2>coming soon</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum illum itaque quidem culpa molestiae, et harum, sit error natus doloremque repellendus, accusantium veniam voluptatibus esse voluptate deserunt quod modi labore?</p>
+                    <div class="action">
+                        <a href="#" target="blank">Github</a>
+                        <a href="#" target="blank">Live Demo</a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="thubmnail">
+                        <img src="img/coming-soon.jpg" width="1000" height="500">
+                    </div>
+                    <h2>coming soon</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum illum itaque quidem culpa molestiae, et harum, sit error natus doloremque repellendus, accusantium veniam voluptatibus esse voluptate deserunt quod modi labore?</p>
+                    <div class="action">
+                        <a href="#" target="blank">Github</a>
+                        <a href="#" target="blank">Live Demo</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!--Testimonials-->
+
+    <section class="testimonials">
+        <h1>Testimonials</h1>
+        <div class="container swiper">
+            <div class="carousel swiper-wrapper">
+                <div class="testimonial swiper-slide">
+
+                    <div class="head">
+                        <div class="profile-area">
+                            <div class="avatar">
+                                <img src="img/avatar-1.jpg">
+                            </div>
+                            <div class="info">
+                                <h4>Diana Ayi</h4>
+                                <small>Civil Engineer (soviel.com)</small>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <span class="material-symbols-sharp">star_rate</span>
+                            <span class="material-symbols-sharp">star_rate</span>
+                            <span class="material-symbols-sharp">star_rate</span>
+                            <span class="material-symbols-sharp">star_rate</span>
+                            <span class="material-symbols-sharp">star_rate</span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quos, accusamus facere nam laudantium nulla minus! Excepturi, fugit veritatis. Voluptatem expedita similique facilis at repellat dicta doloribus voluptatum, rerum eum.</p>
+                </div>
+
+                <div class="testimonial swiper-slide">
+                    
+                    <div class="head">
+                        <div class="profile-area">
+                            <div class="avatar">
+                                <img src="img/avatar-2.jpg">
+                            </div>
+                            <div class="info">
+                                <h4>Daniella Vinyo</h4>
+                                <small>Student (KNUST)</small>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <span class="material-symbols-sharp">star_rate</span>
+                            <span class="material-symbols-sharp">star_rate</span>
+                            <span class="material-symbols-sharp">star_rate</span>
+                            <span class="material-symbols-sharp">star_rate</span>
+                            <span class="material-symbols-sharp">star_rate</span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quos, accusamus facere nam laudantium nulla minus! Excepturi, fugit veritatis. Voluptatem expedita similique facilis at repellat dicta doloribus voluptatum, rerum eum.</p>
+                </div>
+
+                <div class="testimonial swiper-slide">
+                    
+                    <div class="head">
+                        <div class="profile-area">
+                            <div class="avatar">
+                                <img src="img/avatar-3.jpg">
+                            </div>
+                            <div class="info">
+                                <h4>Barlowe Blinks</h4>
+                                <small>CTO (sika.org)</small>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <span class="material-symbols-sharp">star_rate</span>
+                            <span class="material-symbols-sharp">star_rate</span>
+                            <span class="material-symbols-sharp">star_rate</span>
+                            <span class="material-symbols-sharp">star_rate</span>
+                            <span class="material-symbols-sharp">star_rate</span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quos, accusamus facere nam laudantium nulla minus! Excepturi, fugit veritatis. Voluptatem expedita similique facilis at repellat dicta doloribus voluptatum, rerum eum.</p>
+                </div>
+
+                <div class="testimonial swiper-slide">
+                    
+                    <div class="head">
+                        <div class="profile-area">
+                            <div class="avatar">
+                                <img src="img/avatar-4.jpg">
+                            </div>
+                            <div class="info">
+                                <h4>Bob Goodwin</h4>
+                                <small>Fouder (soeney.com)</small>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <span class="material-symbols-sharp">star_rate</span>
+                            <span class="material-symbols-sharp">star_rate</span>
+                            <span class="material-symbols-sharp">star_rate</span>
+                            <span class="material-symbols-sharp">star_rate</span>
+                            <span class="material-symbols-sharp">star_rate</span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quos, accusamus facere nam laudantium nulla minus! Excepturi, fugit veritatis. Voluptatem expedita similique facilis at repellat dicta doloribus voluptatum, rerum eum.</p>
+                </div>
+            </div>
+            <div class="swiper-scrollbar">
+                <div class="swiper-scrollbar-drag"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Contact-->
+    <section class="contact" id="contact">
+        <div class="overlay">
+            <div class="container">
+                <h1>Let's Talk</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, quos? Inventore, sunt voluptas!</p>
+                <form action="https://formspree.io/f/xknenbyo" method="POST">
+                    <input type="text" name="Name" placeholder="Name" required>
+                    <input type="email" name="Email" placeholder="Email" required>
+                    <input type="text" name="Subject" placeholder="Subject" required>
+                    <textarea name="Message" placeholder="Message" required></textarea>
+                    <input class="btn btn-primary" type="submit" name="Submit" value="Submit" required>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Footer-->
+    <footer>
+        <div class="container">
+            <a href="#"><h3>SendAngel</h3></a>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a href="#services">Services</a>
+                </li>
+                <li>
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contact">Let's Talk</a>
+                </li>
+            </ul>
+            <div class="socials">
+                <a href="https://facebook.com/" target="_blank"><i class="uil uil-facebook-f"></i></a>
+                <a href="https://dribbble.com/" target="_blank"><i class="uil uil-dribbble"></i></a>
+                <a href="https://github.com/" target="_blank"><i class="uil uil-github"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            copyright by Anton Medviadok
+        </div>
+    </footer>
+
+
+
+
+<!--JavaScript-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+
+
 
 </body>
 </html>
